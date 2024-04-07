@@ -1,0 +1,205 @@
+:root {
+  /* Fonts */
+  --primary-font: 'Roboto', sans-serif;
+	--secondary-font: 'Raleway', sans-serif;
+  /* Colors */
+  --primary-cl: 76, 89, 230;
+	--primary-active-cl: 64, 75, 191;
+	--accent-cl: 231, 233, 252;
+  --dark-cl: 46, 47, 66;
+  --light-cl: 244, 244, 253;
+  --success-cl: 49, 208, 170;
+  --text-cl: 67, 68, 85;
+	--text-light-cl: 244, 244, 253;
+	--white: 255, 255, 255;
+	/* Background */
+	--main-bg: 255, 255, 255;
+	--dark-bg: 46, 47, 66;
+	--light-bg: 244, 244, 253;
+	/* Other */
+	--border-radius: 4px;
+}
+
+/* Base */
+body {
+  font-family: var(--primary-font);
+  color: rgba(var(--text-cl), 1);
+	background-color: rgba(var(--main-bg), 1);
+	font-size: 16px;
+  line-height: 1.5;
+}
+a {
+  color: currentColor;
+	text-decoration: none;
+}
+a:focus,
+a:hover {
+  color: rgba(var(--primary-active-cl), 1);
+}
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	border-radius: var(--border-radius);
+	border: none;
+	outline: none;
+}
+ul,
+ol {
+	padding: 0;
+  list-style-type: none;
+}
+address {
+  font-style: normal;
+}
+
+/* Common */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.logo {
+	font-family: var(--secondary-font);
+	font-size: 1.125em;
+	line-height: 117%;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.logo:focus,
+.logo:hover {
+	color: currentColor;
+}
+.logo span {
+	color: rgba(var(--primary-cl), 1);
+}
+.header {
+}
+.header-nav {
+	color: rgba(var(--dark-cl), 1);
+	font-weight: 500;
+}
+.header-logo {
+}
+.header-contacts {
+}
+.section {
+}
+.section-header {
+}
+.footer {
+	background-color: rgba(var(--dark-bg), 1);
+	color: rgba(var(--text-light-cl), 1);
+}
+.footer-logo {
+}
+.footer-description {
+}
+
+/* Main (Web Studio) page */
+.webstudio-page h1 {
+	font-weight: 700;
+	font-size: 3.5em;
+	line-height: 107%;
+	text-align: center;
+}
+.webstudio-page h2 {
+	font-weight: 700;
+	font-size: 2.25em;
+	line-height: 111%;
+	text-transform: capitalize;
+	text-align: center;
+	color: rgba(var(--dark-cl), 1);
+}
+.webstudio-page h3 {
+	font-weight: 500;
+	font-size: 1.25em;
+	line-height: 120%;
+	color: rgba(var(--dark-cl), 1);
+}
+
+.section-hero {
+	background-color: rgba(var(--dark-bg), 1);
+	color: rgba(var(--white), 1);
+	text-align: center;
+}
+.section-hero button {
+	background: rgba(var(--primary-cl), 1);
+	color: rgba(var(--white), 1);
+	padding: 16px 32px;
+}
+.section-hero button:focus,
+.section-hero button:hover {
+	background: rgba(var(--primary-active-cl), 1);
+}
+
+.section-advantages {
+}
+.advantages-list {
+}
+.advantages-list-card {
+}
+
+.section-works {
+}
+.work-list {
+}
+.work-list-card {
+}
+
+.section-team {
+	background-color: rgba(var(--light-bg), 1);
+}
+.team-list {
+}
+.team-list-card {
+	width: 264px;
+	text-align: center;
+	background: rgba(var(--white), 1);
+	box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+/* Portfolio */
+.portfolio-page {
+}
+.portfolio-page h2 {
+	font-weight: 500;
+	font-size: 1.25em;
+	line-height: 120%;
+	color: rgba(var(--dark-cl), 1);
+}
+.filters {
+}
+.filters button {
+	background: rgba(var(--light-bg), 1);
+	border: 1px solid rgba(var(--accent-cl), 1);
+	color: rgba(var(--primary-cl), 1);
+	padding: 12px 24px;
+}
+.filters button:focus,
+.filters button:hover {
+	background: rgba(var(--primary-active-cl), 1);
+	border-color: rgba(var(--primary-active-cl), 1);
+	color: rgba(var(--white), 1);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.portfolio {
+}
+.portfolio-card {
+	width: 360px;
+	border: 1px solid rgba(var(--accent-cl), 1);
+}
+.portfolio-card a:focus,
+.portfolio-card a:hover {
+	color: currentColor;
+}
